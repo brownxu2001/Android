@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FF5722">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/run_ani" />
+    <ImageView
+        android:id="@+id/image_tran"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/run1" />
+    <ImageView
+        android:id="@+id/image_scale"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:src="@drawable/run2" />
+
+    <ImageView
+        android:id="@+id/image_animator"
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_gravity="right"
+        android:text="Fragment2"
+        android:src="@drawable/run2"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="课堂练习"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
+

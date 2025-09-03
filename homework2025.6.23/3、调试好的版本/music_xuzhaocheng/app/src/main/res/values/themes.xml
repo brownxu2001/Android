@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 使用正确的 AppCompat 基础主题 -->
+    <style name="Theme.MusicPlayer" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- 确保引用的颜色都存在 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 全屏主题定义 -->
+    <style name="FullScreenTheme" parent="Theme.MusicPlayer">
+        <!-- 设置全屏属性 -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

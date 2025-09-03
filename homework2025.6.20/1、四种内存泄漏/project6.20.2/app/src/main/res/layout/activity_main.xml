@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnLeakStatic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leak: Static Reference" />
+
+        <Button
+            android:id="@+id/btnLeakReceiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leak: Receiver" />
+
+        <Button
+            android:id="@+id/btnLeakThread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leak: Thread Inner Class" />
+
+        <Button
+            android:id="@+id/btnLeakHandler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leak: Handler" />
+
+    </LinearLayout>
+</ScrollView>

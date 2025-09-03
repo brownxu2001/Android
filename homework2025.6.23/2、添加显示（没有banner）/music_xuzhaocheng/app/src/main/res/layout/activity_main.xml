@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/modulesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Banner轮播区域 -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/bannerViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"/>
+
+            <!-- Banner指示器 -->
+            <me.relex.circleindicator.CircleIndicator3
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="-24dp"
+                app:ci_width="8dp"
+                app:ci_height="8dp"
+                app:ci_animator="@animator/scale_with_alpha"
+                app:ci_drawable="@drawable/indicator_selector"/>
+
+            <!-- 模块内容区域 -->
+            <!-- 所有模块将通过代码动态添加 -->
+
+            <!-- 加载更多提示 -->
+            <TextView
+                android:id="@+id/loadMoreView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加载更多..."
+                android:gravity="center"
+                android:padding="16dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

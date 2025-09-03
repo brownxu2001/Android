@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">音乐播放器</string>
+    <string name="privacy_title">用户隐私协议</string>
+    <string name="privacy_content">我们非常重视您的隐私保护，请您仔细阅读用户协议和隐私政策，了解我们对您个人信息的处理方式。</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="agree">同意并使用</string>
+    <string name="disagree">不同意</string>
+    <string name="load_more">加载更多...</string>
+
+</resources>
